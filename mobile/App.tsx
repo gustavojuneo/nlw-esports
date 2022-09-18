@@ -11,7 +11,7 @@ import {
 } from '@expo-google-fonts/inter'
 
 import { Background } from './src/components/Background';
-import { Home } from './src/screens/Home';
+import { Routes } from './src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -39,12 +39,12 @@ export default function App() {
 
   return (
     <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
-      <Background >
+      <Background>
         <StatusBar
           style='light'
           translucent
         />
-        <Home />
+        <Routes />
       </Background>
     </View>
   );
